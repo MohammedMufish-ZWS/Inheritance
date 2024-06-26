@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections;
-using System.Diagnostics;
-using System.Reflection;
-using System.Text;
-using static CSharp.Delegates;
-using static CSharp.Sum;
-using static CSharp.Sealed;
-using static CSharp.Enum;
-using static CSharp.encapsulation;
-using System.Collections.Generic;
-using Inheritance;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Threading;
+﻿using Inheritance;
 using Inheritance.Design_Patterns.Creational;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using static CSharp.Enum;
+using static CSharp.Sealed;
+using static CSharp.Sum;
 
 namespace CSharp
 //Inheritance(Interface)
@@ -29,7 +24,7 @@ namespace CSharp
     public class Dog : Animal
     {   public void Bark()
         {
-            Console.WriteLine("Bhaua bhahahu");
+            Console.WriteLine("I am dog. Get Out of my Area");
         }
     }
 
@@ -41,7 +36,7 @@ namespace CSharp
         }
     }
 
-    public class Horse : Mammal
+    public class Horse : Mammal //MultiLevel
     {
         public void Run()
         {
@@ -135,8 +130,8 @@ namespace CSharp
             chetak.Something();
             //Compile time polymorphism
             Sum p = new Sum();
-            p.sum(1, 2);
-            p.sum(2, 3, 4);
+            p.sum(10, 90);
+            p.sum(11, 77, 11);
             //Run time Polymorphism
             so akash = new so();
             akash.bhai();
@@ -216,29 +211,29 @@ namespace CSharp
 
 
             var StopWatch = Stopwatch.StartNew();
-            List<string> GL = new List<string>();
-            GL.Add("YOLO");
-            GL.Add("FOMO");
-            GL.Add("LOL");
-            GL.Add("LMAO");
-            GL.Add("ROFL");
-            GL.Insert(4, "OG");
-            GL.Add("LMAO");
-            foreach (string kl in GL)
+            List<string> GenList = new List<string>();
+            GenList.Add("Akmal");
+            GenList.Add("Samir");
+            GenList.Add("Faisal");
+            GenList.Add("Azharuddin");
+            GenList.Add("Sohil");
+            GenList.Insert(4, "Abdul Razzak");
+            GenList.Add("Akash");
+            foreach (string kl in GenList)
             {
                 Console.WriteLine(kl);
             }
-            GL.Remove("LMAO");
-            GL.RemoveAt(1);
-            var joker = GL.Contains("OG");
+            GenList.Remove("Akash");
+            GenList.RemoveAt(1);
+            var joker = GenList.Contains("Abdul Razzak");
             Console.WriteLine(joker);
 
-            //GL.Sort();
-            GL.Reverse();
+            //GenList.Sort();
+            GenList.Reverse();
             //console.writeline("sorted list:");
             Console.WriteLine("Reverse List:");
 
-            foreach (string msd in GL)
+            foreach (string msd in GenList)
             { Console.WriteLine(msd); }
 
             StopWatch.Stop();

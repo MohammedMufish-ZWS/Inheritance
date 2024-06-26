@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharp
 {
@@ -16,7 +12,7 @@ namespace CSharp
             // Call the second constructor with a default value
             // First Constructor
             Console.WriteLine("default constructor");
-        }
+            }
 
             // Constructor 2: constructor with one parameter or parameterized constructor
             public ConstructorChaining(int Age)

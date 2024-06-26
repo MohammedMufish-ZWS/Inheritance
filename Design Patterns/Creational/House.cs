@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Inheritance.Design_Patterns.Creational
+﻿namespace Inheritance.Design_Patterns.Creational
 {
     public class House
     {

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharp
 {    
@@ -12,9 +8,9 @@ namespace CSharp
         public class RTP
         {
             public virtual void bhai()
-        {
-            Console.WriteLine("North or South shut up ur mouth");
-        }
+            {
+                Console.WriteLine("North or South shut up ur mouth");
+            }
             
         }
         public class so : RTP

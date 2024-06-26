@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Inheritance
+﻿namespace Inheritance
 {   //we have to make singleton thread safe
     //singleton means i want only single instance of that class to be created
     //example if a class is there with 3 three instances of that class,in singleton we don't do that
